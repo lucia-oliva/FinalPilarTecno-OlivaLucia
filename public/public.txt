@@ -1,0 +1,1 @@
+Aca hay archivos estaticos como iconos, fuentes, etc.
