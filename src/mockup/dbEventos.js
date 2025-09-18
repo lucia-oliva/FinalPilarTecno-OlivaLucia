@@ -1,4 +1,5 @@
-export const getEventMockup = [
+// DB en memoria (semilla inicial). No importa nada.
+export const DB = [
   {
     _id: "e1",
     nombre: "Workshop de Planificación de Bodas",

@@ -1,5 +1,11 @@
 import { useEffect, useState, useCallback } from "react";
-import { getEventos, getEventoById } from "../mockup/eventosApiMock.js";
+import {
+  getEventos,
+  getEventoById,
+  crearEvento,  
+  editarEvento, 
+  borrarEvento, 
+} from "../mockup/eventosApiMock.js";
 
 export function useEventosList() {
   const [data, setData] = useState([]);
@@ -23,9 +29,23 @@ export function useEventosList() {
     refetch();
   }, [refetch]);
 
-  return { data, loading, error, refetch };
-}
+  const crear = useCallback(async (datos) => {
+    await crearEvento(datos);
+    await refetch(); 
+  }, [refetch]);
 
+  const editar = useCallback(async (id, cambios) => {
+    await editarEvento(id, cambios);
+    await refetch(); 
+  }, [refetch]);
+
+  const borrar = useCallback(async (id) => {
+    await borrarEvento(id);
+    await refetch(); 
+  }, [refetch]);
+
+  return { data, loading, error, refetch, crear, editar, borrar };
+}
 
 export function useEventoDetalle(id) {
   const [evento, setEvento] = useState(null);
@@ -49,5 +69,15 @@ export function useEventoDetalle(id) {
     if (id) cargar();
   }, [id, cargar]);
 
-  return { evento, loading, error, reload: cargar };
+  const editar = useCallback(async (cambios) => {
+    await editarEvento(id, cambios);
+    await cargar(); 
+  }, [id, cargar]);
+
+  const borrar = useCallback(async () => {
+    await borrarEvento(id);
+    return true;
+  }, [id]);
+
+  return { evento, loading, error, reload: cargar, editar, borrar };
 }
