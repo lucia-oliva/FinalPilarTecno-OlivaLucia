@@ -1,7 +1,9 @@
 # Wedding Planner (React)
 
 SPA en React para gestionar **eventos** (listado, detalle y CRUD), con **auth por roles** (admin / usuario), **rutas protegidas** y **API mock**
+Para el desarrollo de este intregrador se utilizo como referencia la API creada en el modulo de node, el cual es una api para gestion de eventos.
 
+Link del repositorio de la API: https://github.com/lucia-oliva/API_CRUD-OlivaLucia
 ---
 
 ## Roles
@@ -36,6 +38,7 @@ SPA en React para gestionar **eventos** (listado, detalle y CRUD), con **auth po
 - Pagina Crear y Editar
 - Boton y funcionalidad Reservar
 - Mejoras en diseño, responsabilidad y accesibilidad.
+
 
 
 
