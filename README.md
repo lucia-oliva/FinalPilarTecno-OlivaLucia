@@ -23,8 +23,8 @@ SPA en React para gestionar **eventos** (listado, detalle y CRUD), con **auth po
 ## 🗂️ Rutas
 
 - / → Home
-- /eventos → Listado (usa getEventos)
-- /eventos/:id → Detalle (usa getEventoById)
+- /eventos → Listado 
+- /eventos/:id → Detalle 
 - /eventos/nuevo → Crear (solo admin)
 - /eventos/:id/editar → Editar (solo admin)
 - /login → Login
@@ -33,9 +33,10 @@ SPA en React para gestionar **eventos** (listado, detalle y CRUD), con **auth po
 
 ## 🚧 **Pendiente de Desarrollo**
 
--Pagina Crear y Editar
--Boton y funcionalidad Reservar
--Mejoras en diseño, responsabilidad y accesibilidad.
+- Pagina Crear y Editar
+- Boton y funcionalidad Reservar
+- Mejoras en diseño, responsabilidad y accesibilidad.
+
 
 
 
