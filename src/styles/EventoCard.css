@@ -1,0 +1,43 @@
+.eventocard-root{
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--gray-300) !important;
+  background: #fff !important;
+  box-shadow: var(--soft) !important;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  overflow: hidden; display:flex; flex-direction:column; height:100%;
+}
+.eventocard-root:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--soft-2), var(--glow-rose) !important;
+  border-color: var(--rose-200) !important;
+}
+
+
+.eventocard-cover{
+  position: relative; height: 96px; width: 100%;
+  background: radial-gradient(120% 140% at 0% 0%, var(--rose-200), transparent 70%),
+              radial-gradient(120% 140% at 100% 0%, var(--lav-200), transparent 70%),
+              linear-gradient(135deg, #fff, var(--gray-100));
+  border-bottom: 1px solid var(--gray-300);
+}
+.date-chip{
+  position: absolute !important;
+  right: 10px; bottom: 10px;
+  background: #fff !important;
+  border: 1px solid var(--gray-300) !important;
+}
+
+.eventocard-content{ padding: 14px 14px 0 14px !important; }
+.eventocard-header{ gap: 10px; }
+.eventocard-title{ font-size: clamp(16px, 2.6vw, 20px) !important; }
+.eventocard-meta{ margin-top: 4px !important; color: var(--txt-2) !important; }
+.eventocard-desc{ margin-top: 8px !important; color: var(--txt) !important; }
+
+.eventocard-actions{
+  margin-top: auto; padding: 12px 14px 14px 14px !important; display:flex; justify-content:flex-end;
+}
+.eventocard-button{
+  text-transform: none !important; border-radius: 12px !important;
+  background: var(--lav-300) !important; color: #2D3142 !important; box-shadow: var(--soft) !important;
+}
+.eventocard-button:hover{ filter:saturate(1.03); box-shadow: var(--soft-2) !important; }

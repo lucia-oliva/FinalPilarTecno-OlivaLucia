@@ -1,0 +1,9 @@
+.eventoslist-grid{
+  margin-top: clamp(10px, 2vw, 16px) !important;
+  padding-bottom: clamp(20px, 4vw, 40px);
+}
+.eventoslist-loader{
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+}

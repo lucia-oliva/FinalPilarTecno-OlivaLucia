@@ -1,1 +1,0 @@
-Aca ira la logica de negocio, llamadas API o gestion del estado global.

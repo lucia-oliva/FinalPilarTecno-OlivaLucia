@@ -1,0 +1,14 @@
+.eventos-wrap{ position: relative; }
+.eventos-container{
+  padding-block: clamp(16px, 3vw, 28px) !important;
+  min-height: calc(100dvh - var(--navbar-h));
+}
+.eventos-title{ margin-bottom: 6px !important; text-align: center; font-size: clamp(24px, 3.6vw, 40px) !important; }
+.eventos-sub{ text-align:center; color: var(--txt-2); }
+
+.wave-sep-bottom{
+  position: absolute; bottom: -1px; left:0; right:0; height: 80px;
+  background:
+    radial-gradient(50% 90% at 50% -20%, var(--gray-25) 0%, rgba(255,255,255,0) 70%),
+    linear-gradient(0deg, rgba(255,255,255,0), var(--gray-25));
+}

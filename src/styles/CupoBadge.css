@@ -1,0 +1,11 @@
+.cupobadge-root{
+  font-weight: 600 !important;
+  border: 1px solid rgba(0,0,0,.06) !important;
+  box-shadow: var(--soft) !important;
+}
+.cupobadge-root.is-ok{
+  background: var(--mint) !important; color: #0B3B2E !important;
+}
+.cupobadge-root.is-out{
+  background: var(--err) !important; color: #4A0E0E !important;
+}
