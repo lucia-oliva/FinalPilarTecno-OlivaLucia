@@ -1,0 +1,101 @@
+.reservas-wrap {
+  max-width: 74rem;
+  margin-inline: auto;
+  padding: 2rem 5vw;
+}
+
+.reservas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, var(--lav-100), var(--rose-50));
+}
+
+.reservas-title {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  color: #111;
+}
+
+.reservas-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 .6rem;
+  border-radius: 999px;
+  background: var(--lav-300);
+  color: #111;
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+.reservas-empty {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 .75rem 2rem rgba(17,17,17,.08);
+}
+
+.reservas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 40em) {
+  .reservas-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (min-width: 64em) {
+  .reservas-grid { grid-template-columns: repeat(3,1fr); }
+}
+
+.res-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.1rem;
+  box-shadow: 0 .75rem 2rem rgba(17,17,17,.08);
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.res-title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.res-meta {
+  margin: 0;
+  color: #444;
+  font-size: .95rem;
+}
+
+.res-actions {
+  margin-top: auto;
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8em 1.2em;
+  border-radius: .75rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .95rem;
+}
+
+.btn-ver { background: var(--lav-300); color: #111; }
+.btn-cancelar { background: var(--rose-300); color: #111; }
+.ir-eventos { background: var(--rose-300); color: #111; border-radius: .75rem; }

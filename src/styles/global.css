@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+
 :root{
   --rose-50:#FFF1F5; --rose-100:#FFE6EC; --rose-200:#FCD8E2; --rose-300:#F8B9C6; --rose-400:#F3A6B6;
   --lav-100:#EAEEFF; --lav-200:#D7DFFC; --lav-300:#C7D2FE;
@@ -29,7 +33,10 @@ img { max-width:100%; display:block; }
 h1,h2,h3{ line-height:1.2; font-weight:700; color:var(--txt); }
 p{ color:var(--txt-2); line-height:1.7; }
 
-.app-main{ min-height:calc(100dvh - var(--navbar-h)); }
+.app-main{ 
+  min-height:calc(100dvh - var(--navbar-h));
+
+}
 
 
 .section{ padding-block:clamp(24px,6vw,64px); }
@@ -40,4 +47,10 @@ p{ color:var(--txt-2); line-height:1.7; }
 body{
   padding: 0 !important;
   margin: 0;
+  font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: var(--lh-relaxed);
+  color: var(--txt);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -7,7 +7,7 @@ export default function Home() {
     <Container className="home-container">
       <Paper elevation={0} className="home-hero hero-gradient">
         <Box className="hero-grid">
-          <Stack spacing={2} className="hero-col hero-copy">
+          <Stack spacing={2.5} className="hero-col hero-copy">
             <Typography variant="h2" className="home-title">
               Sistema de Gestión Eventos de Bodas
             </Typography>
@@ -25,37 +25,34 @@ export default function Home() {
               >
                 Ver próximos eventos
               </Button>
-              <Button
-                component={RouterLink}
-                to="/eventos"
-                variant="text"
-                className="home-cta-sec"
-              >
-                Conocer más
-              </Button>
             </Stack>
 
-            <Stack direction="row" spacing={2} className="hero-bullets">
-              <Box className="bullet">
-                <span className="dot" />
+            <Box className="hero-bullets">
+              <div className="bullet">
+                <span className="bullet-icon">✓</span>
                 <span>Mentores con experiencia real</span>
-              </Box>
-              <Box className="bullet">
-                <span className="dot" />
+              </div>
+              <div className="bullet">
+                <span className="bullet-icon">⬇</span>
                 <span>Material descargable</span>
-              </Box>
-              <Box className="bullet">
-                <span className="dot" />
+              </div>
+              <div className="bullet">
+                <span className="bullet-icon">👥</span>
                 <span>Grupos reducidos</span>
-              </Box>
-            </Stack>
+              </div>
+            </Box>
           </Stack>
 
-          <Box className="hero-col hero-photo" role="img" aria-label="Pareja en un salón de boda" />
+          <Box
+            className="hero-col hero-photo"
+            role="img"
+            aria-label="Pareja en un salón de boda"
+          />
         </Box>
 
         <Box className="wave-sep" aria-hidden />
       </Paper>
+
       <Box className="section section-soft">
         <Container className="container-like">
           <Stack spacing={2} alignItems="center" textAlign="center">

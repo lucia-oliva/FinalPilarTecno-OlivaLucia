@@ -8,6 +8,7 @@ import EditarEventoPage from "./pages/EditarEventoPage";
 import LoginPage from "./pages/LoginPage";
 import AuthProvider from "./context/AuthProvider.jsx";
 import Protected from "./components/Proctected.jsx";
+import ReservasPage from "./pages/ReservasPage.jsx";
 
 function App() {
   return (
@@ -17,11 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
-          {/*PUBLICO*/}
           <Route path="/eventos" element={<EventosPage />} />
           <Route path="/eventos/:id" element={<EventoPage />} />
-
-          {/*ADMIN */}
           <Route
             path="/eventos/nuevo"
             element={
@@ -38,6 +36,7 @@ function App() {
               </Protected>
             }
           />
+          <Route path="/mis-reservas" element={<ReservasPage />} />
         </Routes>
       </main>
     </AuthProvider>

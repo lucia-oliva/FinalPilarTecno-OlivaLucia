@@ -1,0 +1,256 @@
+.auth-grid {
+  min-height: calc(100dvh - var(--navbar-h));
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  background: radial-gradient(
+      70em 34em at 8% -10%,
+      rgba(248, 185, 198, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      48em 24em at 110% 20%,
+      rgba(215, 223, 252, 0.22),
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--gray-25), var(--gray-50));
+  padding: clamp(1rem, 4vw, 3rem);
+  gap: 2rem;
+  color: var(--txt);
+}
+
+.brand-pane {
+  display: none;
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.9));
+  border: 0.06rem solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--soft);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+.brand-badge {
+  inline-size: 2.6rem;
+  block-size: 2.6rem;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--rose-300),
+    var(--lav-200),
+    var(--rose-300)
+  );
+  border: 0.06rem solid var(--gray-300);
+  box-shadow: var(--soft);
+  margin-block-end: 1rem;
+}
+.brand-title {
+  font-weight: 700 !important;
+  margin-block-end: 0.4rem;
+}
+.brand-copy {
+  color: var(--txt-2);
+  margin-block-end: 1rem;
+}
+.brand-list {
+  margin: 0;
+  padding-left: 1.1em;
+  color: var(--txt-2);
+}
+.brand-list li {
+  margin-block: 0.3rem;
+}
+
+.auth-card {
+  justify-self: center;
+  inline-size: min(100%, 34rem);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.92));
+  border: 0.06rem solid var(--gray-200);
+  box-shadow: var(--soft-2);
+  backdrop-filter: saturate(1.06) blur(0.4rem);
+}
+
+.brand-list {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  color: var(--txt-2);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.brand-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.6rem;
+  background: color-mix(in oklab, var(--lav-100) 35%, #fcdfdf 65%);
+  box-shadow: var(--soft);
+  border: 0.06rem solid var(--gray-200);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brand-list li::before {
+  content: "✔";
+  font-size: 0.85rem;
+  color: #4b5aa3;
+  font-weight: 600;
+}
+
+.brand-list li:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: var(--soft-2);
+}
+
+/* Header */
+.auth-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  margin-block-end: 1rem;
+}
+.auth-logo {
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--lav-100), #fff);
+  border: 0.06rem solid var(--gray-300);
+}
+.auth-title {
+  font-weight: 700 !important;
+}
+
+.auth-sub {
+  color: var(--txt-2);
+}
+
+.auth-alert {
+  border-radius: 0.8rem;
+  background: #fff !important;
+  border: 0.06rem solid var(--err);
+  margin-block: 1rem;
+}
+
+.auth-form {
+  display: grid;
+  gap: 2rem;
+  margin-block-start: 0.5rem;
+  margin-top: 2rem;
+}
+.MuiInputBase-root {
+  border-radius: 1rem !important;
+}
+.adorn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-radius: 50%;
+  background: var(--lav-100);
+  color: #4b5aa3;
+}
+
+.auth-btn {
+  text-transform: none !important;
+  font-weight: 700 !important;
+  border-radius: 1.2rem !important;
+  padding-block: 0.9rem !important;
+  margin-top: 0.5rem;
+  background: linear-gradient(
+    180deg,
+    var(--rose-300),
+    var(--rose-400)
+  ) !important;
+  color: #fff !important;
+  box-shadow: var(--glow-rose) !important;
+}
+
+.auth-div {
+  margin-block: 1.2rem !important;
+}
+.demo-info {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.75rem;
+  background: color-mix(in oklab, var(--lav-100) 25%, #faf2f2 75%);
+  border: 0.06rem solid var(--gray-200);
+  box-shadow: var(--soft);
+  font-size: 0.9rem;
+}
+
+.demo-info .muted {
+  color: var(--txt-2);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.demo-info .muted::before {
+  content: "🔑";
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.back-home {
+  text-align: center;
+  margin-block-start: 1rem;
+}
+.link-back {
+  color: #b45b73;
+  text-decoration: none;
+  border-bottom: 0.06rem dotted #b45b73;
+}
+.link-back:hover {
+  opacity: 0.9;
+}
+
+.auth-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--rose-400) !important;
+}
+
+.auth-form .MuiInputLabel-root.Mui-focused {
+  color: var(--rose-400) !important;
+}
+
+.auth-form .MuiOutlinedInput-root.Mui-focused .adorn {
+  background: var(--rose-100);
+  color: var(--rose-400);
+}
+
+@media (max-width: 37.5em) {
+  .auth-grid {
+    gap: 1.25rem;
+    padding: 1rem;
+  }
+  .auth-card {
+    inline-size: 100%;
+    padding: 1.25rem;
+  }
+}
+@media (max-width: 48em) {
+  .auth-card {
+    inline-size: min(100%, 32rem);
+  }
+}
+@media (max-width: 64em) {
+  .auth-card {
+    inline-size: min(100%, 34rem);
+  }
+}
+@media (min-width: 75em) {
+  .auth-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 4rem);
+  }
+  .brand-pane {
+    display: block;
+  }
+  .auth-card {
+    inline-size: 100%;
+  }
+}

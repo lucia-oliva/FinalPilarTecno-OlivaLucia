@@ -1,0 +1,163 @@
+.editar-caja {
+  padding: 1rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.editar-titulo {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.alerta {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
+.alerta-ok {
+  background: var(--mint, #A7F3D0);
+  color: #0b3b2e;
+}
+
+.alerta-err {
+  background: var(--err, #FCA5A5);
+  color: #3b0b0b;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.campo label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--lav-300, #C7D2FE);
+  background: #fff;
+}
+
+.campo textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.leyenda {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.35rem;
+}
+
+.fila-botones {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.btn-primario,
+.btn-peligro {
+  flex: 1 1 12rem;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primario {
+  background: var(--lav-300, #C7D2FE);
+}
+
+.btn-peligro {
+  background: var(--rose-300, #F8B9C6);
+}
+
+@media (max-width: 900px) {
+  .editar-caja {
+    max-width: 88%;
+  }
+  .editar-titulo {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .editar-caja {
+    max-width: 95%;
+    padding: 1rem 0.8rem;
+  }
+  .editar-titulo {
+    font-size: 1.25rem;
+  }
+  .btn-primario,
+  .btn-peligro {
+    flex: 1 1 100%;
+  }
+}
+
+.msg-error {
+  margin-top: .35rem;
+  font-size: .9rem;
+  color: #b00020;
+}
+
+.confirm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(17,17,17,.35);
+  display: grid;
+  place-items: center;
+  padding: 5vw;
+  z-index: 50;
+}
+
+.confirm-modal {
+  width: 100%;
+  max-width: 28rem;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1rem;
+  box-shadow: 0 .75rem 2rem rgba(0,0,0,.18);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.confirm-modal h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.confirm-modal p {
+  margin: 0 0 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: .75rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.btn-secundario {
+  background: var(--lav-300);
+  color: #111;
+  border: 0;
+  border-radius: .75rem;
+  padding: .7em 1.1em;
+  font-weight: 600;
+}
