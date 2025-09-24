@@ -72,9 +72,8 @@ polo-final-project
 ├── .gitignore
 ├── eslint.config.js
 └── README.md
-
-
-  
+```
+---  
 ## Instalación y Uso:
 Clonar el repositorio e instalar las dependencias:
 
@@ -86,6 +85,7 @@ Ejecutar la aplicacion
 ```bash
 npm run dev 
 ```
+
 
 
 
