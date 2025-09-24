@@ -45,23 +45,34 @@ Link del repositorio de la API: https://github.com/lucia-oliva/API_CRUD-OlivaLuc
 
 ## Estructura del Proyecto
 
-└── 📁polo-final-project
-  └── 📁node_modules
-  └── 📁public
-  └── 📁src
-    └── 📁assets
-    └── 📁components
-      └── 📁Eventos
-      └── 📄Navbar.jsx
-      └── 📄Protected.jsx
-    └── 📁context
-    └── 📁hooks
-    └── 📁mockup
-  └── 📁pages
-  └── 📁styles
-  └── 📁utils
-  └── 📄App.jsx
-  └── 📄main.jsx
+## Estructura del Proyecto 📁
+
+```plaintext
+polo-final-project
+├── node_modules
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── Eventos
+│   │   ├── Navbar.jsx
+│   │   └── Protected.jsx
+│   ├── context
+│   ├── hooks
+│   ├── mockup
+│   ├── pages
+│   ├── styles
+│   ├── utils
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── vite.config.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── eslint.config.js
+└── README.md
+
 
   
 ## Instalación y Uso:
@@ -75,6 +86,7 @@ Ejecutar la aplicacion
 ```bash
 npm run dev 
 ```
+
 
 
 
