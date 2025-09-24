@@ -4,6 +4,16 @@ SPA en React para gestionar **eventos** (listado, detalle y CRUD), con **auth po
 Para el desarrollo de este intregrador se utilizo como referencia la API creada en el modulo de node, el cual es una api para gestion de eventos.
 
 Link del repositorio de la API: https://github.com/lucia-oliva/API_CRUD-OlivaLucia
+
+---
+
+## Caracteristicas
+- Listado de eventos con detalles (nombre, fecha, lugar, cupos disponibles).
+- Sistema de reservas con control automático de cupos.
+- Gestión de eventos (crear, editar y eliminar).
+- Control de acceso mediante roles (usuario / administrador).
+- Interfaz de usuario responsiva con Material UI.
+
 ---
 
 ## Roles
@@ -30,14 +40,41 @@ Link del repositorio de la API: https://github.com/lucia-oliva/API_CRUD-OlivaLuc
 - /eventos/nuevo → Crear (solo admin)
 - /eventos/:id/editar → Editar (solo admin)
 - /login → Login
-
+- /mis-reservas → Reservas por cada usuario.
 ---
 
-## 🚧 **Pendiente de Desarrollo**
+## Estructura del Proyecto
 
-- Pagina Crear y Editar
-- Boton y funcionalidad Reservar
-- Mejoras en diseño, responsabilidad y accesibilidad.
+└── 📁polo-final-project
+  └── 📁node_modules
+  └── 📁public
+  └── 📁src
+    └── 📁assets
+    └── 📁components
+      └── 📁Eventos
+      └── 📄Navbar.jsx
+      └── 📄Protected.jsx
+    └── 📁context
+    └── 📁hooks
+    └── 📁mockup
+  └── 📁pages
+  └── 📁styles
+  └── 📁utils
+  └── 📄App.jsx
+  └── 📄main.jsx
+
+  
+## Instalación y Uso:
+Clonar el repositorio e instalar las dependencias:
+
+```bash
+npm install
+```
+Ejecutar la aplicacion
+
+```bash
+npm run dev 
+```
 
 
 
